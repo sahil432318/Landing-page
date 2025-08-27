@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Elegant Landing Page</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Sahil's Page</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#features">Features</a>
+      <a href="#testimonials">Testimonials</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Simple. Elegant. Beautiful.</h2>
+    <p>A modern landing page made with only HTML, CSS and basic JavaScript — no mess, no clutter, just clean design.</p>
+    <button onclick="alert('Thanks for clicking!')">Get Started</button>
+  </section>
+
+  <section class="features" id="features">
+    <div class="feature-card">
+      <h3>Clean Design</h3>
+      <p>Modern and elegant layout using basic CSS and HTML.</p>
+    </div>
+    <div class="feature-card">
+      <h3>Responsive</h3>
+      <p>Looks great on all devices with media queries.</p>
+    </div>
+    <div class="feature-card">
+      <h3>Beginner Friendly</h3>
+      <p>Every section uses simple, readable code you can learn from.</p>
+    </div>
+  </section>
+
+  <section class="testimonials" id="testimonials">
+    <div class="testimonial-card">
+      <h3>🌟 Aditi</h3>
+      <p>This landing page is exactly what I needed. Clean and super easy to use!</p>
+    </div>
+    <div class="testimonial-card">
+      <h3>🌟 Rahul</h3>
+      <p>I learned so much by just reading the code. Thanks Priyanka!</p>
+    </div>
+  </section>
+
+  <section class="newsletter">
+    <h2>Subscribe to Newsletter</h2>
+    <form onsubmit="subscribe(event)">
+      <input type="email" id="newsletterEmail" placeholder="Enter your email" required>
+      <button type="submit" class="btn">Subscribe</button>
+    </form>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Contact Me</h2>
+    <form onsubmit="sendMessage(event)">
+      <input type="text" id="name" placeholder="Your Name" required>
+      <input type="email" id="email" placeholder="Your Email" required>
+      <textarea id="message" rows="4" placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 Sahil. All rights reserved.
+  </footer>
+
+  <button onclick="scrollToTop()" id="topBtn">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
